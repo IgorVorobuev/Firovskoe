@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Туры</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="popup-bg hide" id="popup-bg">
+		<div class="popup">
+			<div class="popup_x" id="popup_x" onclick="popupToggle()">X</div>
+				<h2>Заказать звонок</h2>
+				<form>
+					<input type="text" placeholder="ФИО" required>
+
+					<input type="text" placeholder="Город" required>
+
+					<input type="text" placeholder="Телефон" required>
+
+					<input type="email" placeholder="E-mail" required>
+
+					<input type="date" required>
+
+					<button>Отправить</button>
+
+				</form>
+
+		</div>
+
+	</div>
+
+<header id="first-page">
+
+	<div class="container">
+
+		<div class="menu">
+
+			<div class="logo">
+
+				<a href="index.html" class="logo"><img src="img/palm.png"></a>
+
+			</div>
+
+<nav>
+
+			<ul>
+
+				<li>
+
+					<a href="index.html" class="left"> Главная</a>
+
+				</li>
+
+				<li>
+
+					<a href="search.html" class="left"> Акции</a>
+
+				</li>
+
+				<li>
+
+					<a href="seat.html" class="left"> Поиск</a>
+
+				</li>
+
+				<li>
+
+					<a href="booking.html" class="left"> Управление бронированием</a>
+
+				</li>
+
+			</ul>
+
+</nav>
+
+
+<div class="contact_info">
+
+	<ul>
+
+		<li>
+
+			<a href="mailto:tourist-pro@mail.ru">tourist-pro@mail.ru</a>
+
+		</li>
+
+		<li>
+
+			<a href="tel:88005553310">8 (800)555-33-10</a>
+
+		</li>
+
+	</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="back">
+<input type="button" onclick="history.back();" value="Назад"/>
+</div>
+
+<section id="promotions">
+    <div class="container">
+      <h1>АКЦИИ</h1>
+      <div class="actiontab">
+        <div class="action">
+            <img src="img/pexels-pixabay-220032.jpg" alt="action">
+          <div class="hide_info">
+              <p class="osnovah">1.Услуги проводника за полцены!</p>
+              <p id="textArea"></p>
+          <label id="toggleButton1" onclick="toggleText1();" href="javascript:void(0);">Показать полностью</label>
+          </div>
+        </div>
+
+        <div class="action">
+            <img src="img/pexels-spencer-gurley-1497587.jpg" alt="action">
+          <div class="hide_info">
+              <p class="osnovah">2.Трансфер до места начала похода 
+          <br>- в подарок!</p>
+              <p id="textArea1"></p>
+          <label id="toggleButton2" onclick="toggleText2();" href="javascript:void(0);">Показать полностью</label>
+          </div>
+        </div>
+
+        <div class="action">
+            <img src="img/mountains-1761292_1920.jpg" alt="action">
+          <div class="hide_info">
+              <p class="osnovah">3.Скидка 20% 
+            <br>на следующее бронирование</p>
+              <p id="textArea2"></p>
+          <label id="toggleButton3" onclick="toggleText3();" href="javascript:void(0);" >Показать полностью</label>
+          </div>
+        </div>
+        <div class="action">
+            <img src="img/pexels-cnma-633951.jpg" alt="action">
+          <div class="hide_info">
+              <p class="osnovah">4.Скидка 10% на аренду 
+          <br>туристического оборудования</p>
+              <p id="textArea3"></p>
+          <label id="toggleButton4" onclick="toggleText4();" href="javascript:void(0);" >Показать полностью</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="panel" id="sub">
+        <div class="container h-100 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="section-title text-upper" style="color:#257724;">подписка на закрытые акции</h1>
+            <form class="w-50 mt-5 d-flex flex-column align-items-center">
+                <input type="text" class="form-control"placeholder="ФИО">
+                <input type="text" class="form-control mt-3" placeholder="ПОЧТА">
+                <button class="btn btn-white-big text-upper mt-5">Подписаться</button>
+            </form>
+            <a class="dop" href=”http://return”>Возврат</a>
+    <a class="dop" href=”http://feedback”>Обратная связь</a>
+        </div>
+    </section>
+
+</section>
+	<section id="contacts">
+		<div class="container">
+			<h2>Наши контакты</h2>
+			<p>Санкт-Петербург</p>
+			<p><a href="tel:88005553310">8 (800)555-33-10</a></p>
+			<p><a href="mailto:tourist-pro@mail.ru">tourist-pro@mail.ru</a></p>
+		</div>
+</section>
+
+<footer>
+  <div class="container2">
+    <div class="footer-content">
+      <ul>
+        <li><a href="#"><b>О нас</b></a></li>
+        <li><a href="#">Работайте у нас</a></li>
+        <li><a href="#">Благотворительность</a></li>
+        <li><a href="#">Наши партнеры</a></li>
+        <li><a href="#">Новости</a></li>
+      </ul>
+      <ul class="text-center">
+        <li><a href="#"><b>Контакты</b></a></li>
+        <li><a href="#">Обратная связь</a></li>
+        <li><a href="#">Для прессы</a></li>
+        <li><a href="#">Сотрудничество</a></li>
+      </ul>
+        <div class="ppp">
+          <h4 style="color:white;">Подписывайтесь на рассылку</h4>
+          <input type="text" name="" class="ssilka">
+          <h4 style="color:white; padding-top: 10px;">Наши социальные сети</h4>
+          <div class="icons">
+            <img src="img/inst1.png" alt="img">
+            <img src="img/facebook1.png" alt="img">
+            <img src="img/vk1.png" alt="img">
+            <img src="img/yt.png" alt="img">
+            <img src="img/twitter.png" alt="img">
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+<a class="btn btn-primary btn-up" href="#first-page"><img src="img/go_up.png" alt="go up"></a>
+	<script type="text/javascript" src="js/javasript1.js">
+	</script>
+</body>
+</html>
